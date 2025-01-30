@@ -15,6 +15,18 @@ body {
   transition: background 0.5s;
 }
 
+.toggle-lang {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: #4caf50;
+  color: white;
+}
+
+
 .dark-mode {
   background-color: #1c1c1c;
 }
