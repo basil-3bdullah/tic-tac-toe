@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  transition: background 0.5s;
+}
+
+.dark-mode {
+  background-color: #1c1c1c;
+}
+
+.light-mode {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.game {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  font-size: 32px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.square:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  margin-bottom: 10px;
+}
+
+.toggle-mode, .restart-btn, .reset-btn {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-mode {
+  background: #ffcc00;
+}
+
+.restart-btn {
+  background: #61dafb;
+}
+
+.reset-btn {
+  background: #ff5555;
+  color: white;
+}
