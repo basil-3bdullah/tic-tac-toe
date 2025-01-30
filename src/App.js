@@ -85,6 +85,7 @@ export default function App() {
           </button>
         </div>
       ) : (
+        
         <>
           <div className="status">{status}</div>
           <Board squares={squares} onClick={handleClick} />
@@ -96,8 +97,12 @@ export default function App() {
           </button>
         </>
       )}
-    </div>
-  );
+       <footer className="footer">
+      Created by <span className="creator-name">Basil Abdullah</span>
+    </footer>
+  </div>
+);
+  
 }
 
 function calculateWinner(squares) {
